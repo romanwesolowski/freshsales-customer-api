@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="webit" translate="label" sortOrder="200">
+            <label>WebIt</label>
+        </tab>
+        <section id="fresh_sales" showInDefault="1" showInWebsite="1" showInStore="1">
+            <resource>WebIt_FreshSales::fresh_sales</resource>
+            <label>Fresh Sales</label>
+            <tab>webit</tab>
+            <group id="config" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Config</label>
+                <field id="domain" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Domain</label>
+                </field>
+                <field id="app_token" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>App token</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
